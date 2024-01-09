@@ -10,11 +10,18 @@ var setZeroes = function(matrix) {
             }
         }
     }
+    // 1 1 1
+    // 1 0 1
+    // 1 1 1
+
     for(let i = 0; i < rows.length; i++) {
         for(let j = 0; j < matrix[0].length; j++){
             matrix[rows[i]][j] = 0
         }
     }
+    // 1 1 1
+    // 0 0 0
+    // 1 1 1
 
     for(let i = 0; i < matrix.length; i++) {
         for(let j = 0; j < cols.length; j++){
@@ -22,6 +29,9 @@ var setZeroes = function(matrix) {
         }
     }
 
+    // 1 0 1
+    // 0 0 0
+    // 1 0 1
 
     return matrix
 };
