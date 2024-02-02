@@ -23,7 +23,5 @@ function hasPathSum(root, targetSum) {
         return targetSum === 0;
     }
 
-    return (
-        hasPathSum(root.left, targetSum) || hasPathSum(root.right, targetSum)
-    )
+    return hasPathSum(root.left, targetSum) || hasPathSum(root.right, targetSum)
 };
