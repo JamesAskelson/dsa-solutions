@@ -1,20 +1,18 @@
 var generateParenthesis = function(n) {
     let res = []
-    if(n === 1){
+    if(n === 1) {
         return ["()"]
     }
-
-    function backtrack(str, opened, closed){
-        if(opened > n || closed > n || closed>opened){
-            return;
+    let helper = function(str, opened, closed) {
+        if(closed > n || opened > n || closed > opened) {
+            return
         }
-        if(str.length == 2*n && opened == closed) {
+        if(str === 2*n && closed === opened) {
             res.push(str)
         }
-        backtrack(str + '(', opened+1, closed)
-        backtrack(str + ')', opened, closed+1)
+        helper(str + '(', opened+1, closed)
+        helper(str + ')', opened, closed+1)
     }
-
-    backtrack('', 0, 0)
+    helper('', 0, 0)
     return res
 };
