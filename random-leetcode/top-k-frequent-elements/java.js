@@ -22,3 +22,26 @@ var topKFrequent = function(nums, k) {
 };
 
 console.log(topKFrequent([4,1,-1,2,-1,2,3], 2))
+
+var topKFrequent = function(nums, k) {
+    let count = {}
+    let res = []
+    for(let i = 0; i < nums.length; i++){
+        if(!count[nums[i]]){
+            count[nums[i]] = 1
+        } else {
+            count[nums[i]]++
+        }
+    }
+
+    let countArr = Object.entries(count)
+    countArr.sort((a,b) => b[1] - a[1])
+    console.log(countArr)
+
+    for(let i = 0 ; i < k; i++){
+        res.push(countArr[i][0])
+    }
+
+
+    return res
+};
