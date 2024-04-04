@@ -3,25 +3,6 @@
  * @param {number[]} nums
  * @return {number}
  */
-// var minSubArrayLen = function(target, nums) {
-//     let sum = 0;
-//     let sumArr = []
-//     let sorted = nums.sort((a, b) => b - a);
-
-//     for(let i = 0; i < sorted.length; i++) {
-//         let curr = sorted[i]
-//         sum += curr;
-//         console.log('sum', sum)
-//         sumArr.push(curr);
-//         console.log('sumarr', sumArr)
-//         if(sum >= target) {
-//             return sumArr.length;
-//         }
-//     }
-
-//     return 0;
-// };
-
 
 
 
