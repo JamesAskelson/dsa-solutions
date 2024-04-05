@@ -27,7 +27,25 @@ var longestConsecutive = function(nums) {
     return max
 };
 
+var longestConsecutive = function(nums) {
+    if(nums.length === 0){
+        return 0
+    }
 
-nums2 = [100,4,200,1,3,2]
+    let set = new Set(nums)
+    let max = 1;
+    for(let i = 0; i < nums.length; i++){
 
-console.log(longestConsecutive(nums2))
+        if(!set.has(nums[i]-1)){
+            let count = 1
+            let val = nums[i]
+            while(set.has(val+1)){
+                count++
+                val++
+            }
+            max = Math.max(max, count)
+        }
+
+    }
+    return max
+};
