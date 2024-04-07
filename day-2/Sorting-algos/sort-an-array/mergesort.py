@@ -12,20 +12,16 @@ def merge(left, right):
         j = 0
         while i < len(left) and j < len(right):
             if left[i] < right[j]:
-                merged.push(left[i])
-                print('left both', merged)
+                merged.append(left[i])
                 i = i + 1
             else:
-                merged.push(right[j])
-                print('right both', merged)
+                merged.append(right[j])
                 j = j + 1
         while i < len(left):
-            merged.push(left[i])
-            print('left only', merged)
+            merged.append(left[i])
             i = i + 1
         while j < len(right):
-            merged.push(right[j])
-            print('right only', merged)
+            merged.append(right[j])
             j = j + 1
 
         return merged
