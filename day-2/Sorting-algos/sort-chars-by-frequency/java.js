@@ -33,5 +33,25 @@ var frequencySort = function(s) {
     return result;
 };
 
+var frequencySort = function(s) {
+    let res = ''
+    let strObj = {}
+    for(let char of s){
+        if(strObj[char]) {
+            strObj[char]++
+        } else {
+            strObj[char] = 1
+        }
+    }
+
+    let strObjArr = Object.entries(strObj)
+    strObjArr.sort((a,b) => b[1] - a[1])
+
+    for(let letter of strObjArr){
+        res += letter[0].repeat(letter[1])
+    }
+    return res
+};
+
 
 console.log(frequencySort('Aabb'))
