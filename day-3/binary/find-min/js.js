@@ -20,3 +20,16 @@ var findMin = function(nums) {
     }
     return nums[low]
 };
+
+var findMin = function(nums) {
+    let low = 0;
+    let high = nums.length -1;
+    while(low <= high){
+        if(nums[low] > nums[high]){
+            low++
+        } else {
+            high--
+        }
+    }
+    return nums[low]
+};
