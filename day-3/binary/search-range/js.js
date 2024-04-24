@@ -33,3 +33,21 @@ var searchRange = function(nums, target) {
     let right = binarySearch(nums, target, false)
     return [left, right]
 };
+
+var searchRange = function(nums, target) {
+    let left = 0;
+    let right = nums.length - 1
+    while(left <= right){
+        if(nums[left] === target && nums[right] === target){
+            return [left, right]
+        }
+        if(nums[left] < target){
+            left++
+        }
+        if(nums[right] > target){
+            right--
+        }
+
+    }
+    return [-1, -1]
+};
