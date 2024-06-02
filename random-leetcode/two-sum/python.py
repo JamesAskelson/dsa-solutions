@@ -1,4 +1,4 @@
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+def twoSum(self, nums: List[int], target: int) -> List[int]:
         mapp = {}
         for i in range(len(nums)):
             difference = target - nums[i]

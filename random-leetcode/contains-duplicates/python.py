@@ -7,3 +7,13 @@ def containsDuplicate(self, nums: List[int]) -> bool:
             else:
                 return True
         return False
+
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        mapp = set([])
+        for num in nums:
+            if num in mapp:
+                return True
+            else:
+                mapp.add(num)
+        return False
+
