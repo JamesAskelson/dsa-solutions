@@ -1,45 +1,15 @@
-def maxArea(self, height: List[int]) -> int:
-        left = 0
-        right = len(height) - 1
-        max = 0
-        while left < right:
-            leftHeight = height[left]
-            rightHeight = height[right]
-            width = right - left
-            if leftHeight > rightHeight:
-                 lowerHeight = rightHeight
+    def maxArea(self, height: List[int]) -> int:
+        low = 0
+        high = len(height) - 1
+        most_water = 0
+        while low < high:
+            dist = high - low
+            lower_val = min(height[low], height[high])
+            curr_max = lower_val*dist
+            if curr_max > most_water:
+                most_water = curr_max
+            if lower_val == height[low]:
+                low += 1
             else:
-                 lowerHeight = leftHeight
-            storedWater = width * lowerHeight
-
-            if storedWater > max:
-                max = storedWater
-            else:
-                max = max
-            if lowerHeight == leftHeight:
-                left += 1
-            else:
-                right -= 1
-        return max
-
-def maxArea(self, height: List[int]) -> int:
-        left = 0
-        right = len(height) - 1
-        max = 0
-        while left < right:
-            leftHeight = height[left]
-            rightHeight = height[right]
-            width = right - left
-
-            lowerHeight = min(leftHeight, rightHeight)
-
-            storedWater = width * lowerHeight
-
-            if storedWater > max:
-                max = storedWater
-
-            if lowerHeight == leftHeight:
-                left += 1
-            else:
-                right -= 1
-        return max
+                high -= 1
+        return most_water
