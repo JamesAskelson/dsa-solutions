@@ -1,5 +1,5 @@
 def generate(self, numRows: int) -> List[List[int]]:
-    res = []
+    result = []
     for i in range(0, numRows):
         row = [0] * (i + 1)
         row[0] = 1
@@ -8,5 +8,5 @@ def generate(self, numRows: int) -> List[List[int]]:
         while j < i:
             row[j] = res[i - 1][j-1] + res[i - 1][j]
             j += 1
-        res.append(row)
-    return res
+        result.append(row)
+    return result
