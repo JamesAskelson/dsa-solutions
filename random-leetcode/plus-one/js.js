@@ -27,3 +27,19 @@ var plusOne = function(digits) {
         }
     }
 };
+
+var plusOne = function(digits) {
+    digits[digits.length - 1] += 1
+    let i = digits.length - 1
+    while(i >= 0 && digits[i] > 9){
+        digits[i] -= 10
+        if(digits[i-1] == null){
+            digits.unshift(1)
+        } else {
+            digits[i-1] += 1
+        }
+
+        i--
+    }
+    return digits
+};
