@@ -10,7 +10,7 @@ var maxArea = function(height) {
         if(sum > max) {
             max = sum
         }
-        leftVal > rightVal ? right-- : left++
+        leftVal > rightVal ? right -= 1 : left += 1
     }
     return max
 };
