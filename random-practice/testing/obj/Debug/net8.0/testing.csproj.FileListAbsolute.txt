@@ -1,0 +1,14 @@
+/home/jamesaskelson/c#/testing/bin/Debug/net8.0/testing
+/home/jamesaskelson/c#/testing/bin/Debug/net8.0/testing.deps.json
+/home/jamesaskelson/c#/testing/bin/Debug/net8.0/testing.runtimeconfig.json
+/home/jamesaskelson/c#/testing/bin/Debug/net8.0/testing.dll
+/home/jamesaskelson/c#/testing/bin/Debug/net8.0/testing.pdb
+/home/jamesaskelson/c#/testing/obj/Debug/net8.0/testing.GeneratedMSBuildEditorConfig.editorconfig
+/home/jamesaskelson/c#/testing/obj/Debug/net8.0/testing.AssemblyInfoInputs.cache
+/home/jamesaskelson/c#/testing/obj/Debug/net8.0/testing.AssemblyInfo.cs
+/home/jamesaskelson/c#/testing/obj/Debug/net8.0/testing.csproj.CoreCompileInputs.cache
+/home/jamesaskelson/c#/testing/obj/Debug/net8.0/testing.dll
+/home/jamesaskelson/c#/testing/obj/Debug/net8.0/refint/testing.dll
+/home/jamesaskelson/c#/testing/obj/Debug/net8.0/testing.pdb
+/home/jamesaskelson/c#/testing/obj/Debug/net8.0/testing.genruntimeconfig.cache
+/home/jamesaskelson/c#/testing/obj/Debug/net8.0/ref/testing.dll
