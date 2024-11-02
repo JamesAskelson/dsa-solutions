@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/jamesaskelson/c#/testing/testing.csproj": {}
+    "/home/jamesaskelson/leet-code-solutions/random-practice/testing/testing.csproj": {}
   },
   "projects": {
-    "/home/jamesaskelson/c#/testing/testing.csproj": {
+    "/home/jamesaskelson/leet-code-solutions/random-practice/testing/testing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/jamesaskelson/c#/testing/testing.csproj",
+        "projectUniqueName": "/home/jamesaskelson/leet-code-solutions/random-practice/testing/testing.csproj",
         "projectName": "testing",
-        "projectPath": "/home/jamesaskelson/c#/testing/testing.csproj",
+        "projectPath": "/home/jamesaskelson/leet-code-solutions/random-practice/testing/testing.csproj",
         "packagesPath": "/home/jamesaskelson/.nuget/packages/",
-        "outputPath": "/home/jamesaskelson/c#/testing/obj/",
+        "outputPath": "/home/jamesaskelson/leet-code-solutions/random-practice/testing/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/jamesaskelson/.nuget/NuGet/NuGet.Config"

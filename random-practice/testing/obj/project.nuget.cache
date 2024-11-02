@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LeONEQ9Cf6w=",
+  "dgSpecHash": "UHfrHVSCPwY=",
   "success": true,
-  "projectFilePath": "/home/jamesaskelson/c#/testing/testing.csproj",
+  "projectFilePath": "/home/jamesaskelson/leet-code-solutions/random-practice/testing/testing.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
